@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-package basic.exercises
-=======
 package basic.oop
->>>>>>> 6f274629cc0c052fe6c6762d8bd9b156cfb64e14
+
 
 object TraitsVsAbstract extends App {
 
