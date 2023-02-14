@@ -1,5 +1,6 @@
 package basic.oop
 
+
 object Traits extends App {
 
   abstract class Animal {

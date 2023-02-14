@@ -1,5 +1,6 @@
 package basic.oop
 
+
 object OverrideAndOverload extends App {
 
   class Car(protected val color: String, protected val speed: Double) {

@@ -1,5 +1,6 @@
 package basic.oop
 
+
 object Inheritance extends App {
 
   /*
