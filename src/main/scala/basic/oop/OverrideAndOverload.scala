@@ -30,9 +30,9 @@ object OverrideAndOverload extends App {
   unknownCar = new Civic("Civic 2009")
 
   // Super - it refers to anything in the superclass
-  class Toyota(model: String) extends Car("Gray", 0.0) {
+  class Toyota(modelS: String) extends Car("Gray", 0.0) {
     //override val model = model <-- DOING this, the compiler will not know that we refers to the model in superclass
-    override val super.model = model
+    override val model = modelS
     override def accelerate: Unit = {
       super.accelerate()
       println("+20 km/h")

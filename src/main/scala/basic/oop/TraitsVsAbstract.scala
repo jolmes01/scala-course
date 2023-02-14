@@ -13,7 +13,7 @@ object TraitsVsAbstract extends App {
   }
 
   //traits
-  trait Carnivore(name: String) {
+  trait Carnivore { //(name: String) { // Traits cannot have parameters
     def eat(animal: Animal): Unit
     def preferredMeat: String = "fresh meat"
   }
