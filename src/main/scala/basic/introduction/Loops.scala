@@ -40,7 +40,7 @@ object Loops extends App{
   array2(3) = 2
   //array2(4) = 1 Error, you can't add values to an array
 
-  //Equivalents
+  //Similar ways
   for(integer <- array2){
     println("For loop 4",integer)
   }

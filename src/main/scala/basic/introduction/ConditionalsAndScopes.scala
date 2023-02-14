@@ -62,7 +62,7 @@ object ConditionalsAndScopes extends App{
 
   {
     val scopeTest = 2
-    println("Scope dentro de main",scopeTest)
+    println("Scoped",scopeTest)
   }
 
   println("Scope main",scopeTest)
