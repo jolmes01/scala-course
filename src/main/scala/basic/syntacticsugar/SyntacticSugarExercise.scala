@@ -14,6 +14,8 @@ object SyntacticSugarExercise extends App {
     def unary_! : String = s"$name is not a person!!!"
 
     def isAlive: Boolean = true
+
+    def apply(): String = s"Hi, my name is $name and I like $favoriteMovie"
   }
 
   // Infix notation
@@ -34,6 +36,15 @@ object SyntacticSugarExercise extends App {
   //Postfix notation - Functions that do not receive any parameters have the property that they can be used in a postfix notation
   println(juan.isAlive)
   println(juan isAlive) // We need to import scala.language.postfixOps to be able to use the postfix notation
+
+  //Apply notation
+  println(juan.apply())
+  println(juan()) // equivalent
+
+  /*
+  Compiler does not complain because whenever it sees an object called like a function,
+  it actually looks for a definition of apply in that class
+   */
 
   /*
   1.  Overload the + operator to receive a nickname and return a new Person with its nickname concatenated
