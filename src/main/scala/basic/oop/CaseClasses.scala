@@ -27,6 +27,10 @@ object CaseClasses extends App {
   // 6. CCs are serializable, which makes classes especially useful when dealing with distributed systems
 
   // 7. CCs have extractor patterns == CCs can be used in PATTERN MATCHING
+  val greeting = juan match {
+    case Person(n, a) => s"Hi, my name is $n and I am $a years old"
+    case _ => "I don't know who I am"
+  }
 
   // 8. CCs are also applicable to object keyword
   case object Dog {
