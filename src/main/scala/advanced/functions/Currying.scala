@@ -23,7 +23,7 @@ object Currying extends App {
   val multipleArgumentsMethodPartiallyApplied = multipleArgumentsMethod(10)(_)
   multipleArgumentsMethodPartiallyApplied(10)
 
-  val multipleArgunmentsToCurried = (multipleArgumentsMethod(_)(_)).curried
+  val multipleArgunmentsToCurried = (multipleArgumentsMethod(_: Int)(_: Int)).curried
   multipleArgunmentsToCurried(10)(10)
 
   realCurriedMethod(10)(10)
